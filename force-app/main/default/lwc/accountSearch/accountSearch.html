@@ -13,6 +13,7 @@
       <template if:true={accounts.data}>
         <template for:each={accounts.data} for:item="account">
              <p key={account.Id}>{account.Name}</p>
+             <p key={account.Id}>{account.NumberOfEmployees}</p>
         </template>
     </template> 
   </lightning-card>
